@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>it loads and show nothing</title>
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    border: 12px solid coral;
+    flex-wrap: wrap;
+    height: 15vh;
+}
+button{
+    background-color: rgb(255, 133, 133);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border:2px solid rgb(255, 133, 133);
+    border-radius: 3px;
+    color: white;
+    font-weight: medium;
+    font-size: 14px;
+    height: 38px;
+    width: 50px;
+}
+button:hover{
+    background-color: rgb(255, 171, 46);
+    border:2px solid rgb(255, 171, 46);
+    border-radius: 3px;
+    color: white;
+    height: 43px;
+}
+
+li{
+    list-style: none;
+    display: inline;
+    padding: 0 15px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: coral;
+    height: 100vh;
+}
+.content{
+    border: 2px solid rgb(255, 171, 46);
+    border-radius: 4px;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+@keyframes loading {
+    10%{
+        rotate: 30deg;
+    }
+    100%{
+        rotate: 360deg;
+    } 
+}
+img{
+    animation: loading ease-in-out infinite 6s;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button>Home</button></li>
+                <li><button>About</button></li>
+                <li><button>Contact</button></li>
+                <li><button>Blog</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+        <img src="load-icon-png-20.png" alt="loading" >
+    </div>
+    </div>
+</body>
+</html>
