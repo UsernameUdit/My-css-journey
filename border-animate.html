@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: grid;
+            grid-template-columns: auto auto;
+        }
+        .border{
+            
+            height: 3vh;
+            animation:infinite rgb 8s;
+        }
+        .content{
+            height: 3vh;
+            animation: infinite rgb2 8s;
+        }
+        @keyframes rgb2 {
+            0%{
+                background-color: rgb(255, 55, 55);
+            }
+            20%{
+                background-color: rgb(147, 147, 255);
+            }
+            50%{
+                background-color: rgb(255, 65, 65);
+            }            
+            70%{
+                background-color: rgb(65, 179, 255);
+            }            
+
+            80%{
+                background-color: rgb(255, 98, 124);
+            }
+            100%{
+                background-color: rgb(118, 118, 255);
+            }
+        }
+        @keyframes rgb {
+            0%{
+                background-color: red;
+            }
+            20%{
+                background-color: rgb(255, 120, 120);
+            }
+            40%{
+                background-color: rgb(255, 175, 71);
+            }
+            50%{
+                background-color: rgb(16, 147, 255);
+            }
+            60%{
+                background-color: rgb(136, 9, 255);
+            }
+            80%{
+                background-color: rgb(46, 9, 255);
+            }
+            100%{
+                background-color: rgb(255, 152, 152);
+            }
+            
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="border">
+
+    </div>
+    <div class="content">
+
+    </div>
+</body>
+</html>
